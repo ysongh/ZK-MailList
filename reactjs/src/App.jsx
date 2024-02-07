@@ -1,6 +1,7 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import './App.css';
+import { Button } from './components/ui/button';
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
         <Route
           path="/test"
           element={
-            <h1>Test</h1>} />
+            <Button>Click me</Button>} />
         <Route
           path="/"
           element={
