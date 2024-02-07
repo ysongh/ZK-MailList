@@ -14,7 +14,7 @@ function App() {
         <Route
           path="/"
           element={
-            <h1>Home</h1>} />
+            <h1 className='text-blue text-5xl'>Home</h1>} />
       </Routes>
     </HashRouter>
   )
