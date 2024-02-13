@@ -2,7 +2,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/layout/navbar';
 import { Button } from './components/ui/button';
-
+import Landing from './pages/Landing';
 import Form from './pages/Form';
 
 function App() {
@@ -20,8 +20,7 @@ function App() {
           element={<Form />} />
         <Route
           path="/"
-          element={
-            <h1 className='text-blue text-5xl'>Home</h1>} />
+          element={<Landing /> } />
       </Routes>
     </HashRouter>
   )
