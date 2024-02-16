@@ -1,12 +1,12 @@
 import { WagmiProvider, createConfig } from "wagmi";
-import { sepolia } from "wagmi/chains";
+import { sepolia, scrollSepolia } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 
 const config = createConfig(
   getDefaultConfig({
     // Your dApps chains
-    chains: [sepolia],
+    chains: [sepolia, scrollSepolia],
 
     // Required API Keys
     walletConnectProjectId: "",
