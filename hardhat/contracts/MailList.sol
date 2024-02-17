@@ -6,8 +6,8 @@ contract MailList {
 
     constructor() {}
 
-    function subscribe(string calldata email) external {
-        ownerMailList[msg.sender].push(email);
+    function subscribe(address from, string calldata email) external {
+        ownerMailList[from].push(email);
     }
 
     function getAllMailList(address from) external view returns (string[] memory) {
