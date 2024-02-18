@@ -5,6 +5,7 @@ import Navbar from './components/layout/navbar';
 import { Button } from './components/ui/button';
 import Landing from './pages/Landing';
 import Form from './pages/Form';
+import EmailForm from './pages/EmailForm';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
           <Route
             path="/form"
             element={<Form />} />
+          <Route
+            path="/emailform"
+            element={<EmailForm />} />
           <Route
             path="/"
             element={<Landing /> } />
