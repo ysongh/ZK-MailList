@@ -6,6 +6,7 @@ import { Button } from './components/ui/button';
 import Landing from './pages/Landing';
 import Form from './pages/Form';
 import EmailForm from './pages/EmailForm';
+import Dashboard from './pages/Dashboard';
 
 function App() {
 
@@ -24,6 +25,9 @@ function App() {
           <Route
             path="/emailform"
             element={<EmailForm />} />
+          <Route
+            path="/dashboard"
+            element={<Dashboard />} />
           <Route
             path="/"
             element={<Landing /> } />
