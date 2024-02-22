@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div className='flex justify-between px-5 py-2'>
+    <div className='container flex justify-between px-5 py-2'>
       <div mr="4">
         <Link to="/">
           <h1 className='text-2xl'>
